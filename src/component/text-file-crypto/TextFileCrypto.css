@@ -1,0 +1,32 @@
+.text-file-crypto-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.text-file-crypto-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.text-file-crypto-container input[type="file"],
+.text-file-crypto-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.text-file-crypto-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.text-file-crypto-container button:hover {
+  background-color: #0056b3;
+}

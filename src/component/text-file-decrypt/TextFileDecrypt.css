@@ -1,0 +1,36 @@
+.file-decryptor-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.file-decryptor-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.file-decryptor-container input[type="file"],
+.file-decryptor-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.file-decryptor-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.file-decryptor-container button:hover {
+  background-color: #0056b3;
+}
+.file-decryptor-container .error {
+  color: red;
+  margin-bottom: 10px;
+}
