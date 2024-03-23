@@ -52,22 +52,3 @@
     max-width: 600px;
   }
 }
-@media only screen and (min-width: 1024px) {
-  /* For larger screens */
-  .component-app {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .home-content {
-    width: 50%;
-    margin-right: 20px;
-  }
-  .tabs {
-    flex: 1;
-    max-width: 300px;
-    margin-bottom: 0;
-  }
-  .tabs button {
-    margin-bottom: 10px;
-  }
-}
