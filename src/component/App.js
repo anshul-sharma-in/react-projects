@@ -44,7 +44,7 @@ class App extends React.Component {
     ));
   }
   renderTabContent() {
-    const { next, total, activeTab, sampleFormData } = this.state;
+    const { next, total, activeTab } = this.state;
     switch (activeTab) {
       case "home":
         return (
@@ -68,27 +68,27 @@ class App extends React.Component {
             <DynamicForm />
           </div>
         );
-        case "textFileCrypto":
-          return (
-            <div className="text-file-crypto-content">
-              <h2>Encrypt your files content here</h2>
-              <TextFileCrypto />
-            </div>
-          );
-          case "textFileDecrypt":
-          return (
-            <div className="text-file-decrypt-content">
-              <h2>Decrypt your file</h2>
-              <TextFileDecrypt />
-            </div>
-          );
-          case "textToFile":
-          return (
-            <div className="text-to-file-content">
-              <h2>Create Text File</h2>
-              <TextToFile />
-            </div>
-          );
+      case "textFileCrypto":
+        return (
+          <div className="text-file-crypto-content">
+            <h2>Encrypt your files content here</h2>
+            <TextFileCrypto />
+          </div>
+        );
+      case "textFileDecrypt":
+        return (
+          <div className="text-file-decrypt-content">
+            <h2>Decrypt your file</h2>
+            <TextFileDecrypt />
+          </div>
+        );
+      case "textToFile":
+        return (
+          <div className="text-to-file-content">
+            <h2>Create Text File</h2>
+            <TextToFile />
+          </div>
+        );
       default:
         return null;
     }
@@ -96,9 +96,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="component-app">
-        <div className="tabs">
-          {this.renderTabs()}
-        </div>
+        <div className="tabs">{this.renderTabs()}</div>
         {this.renderTabContent()}
       </div>
     );
